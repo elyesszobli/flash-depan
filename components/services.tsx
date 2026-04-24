@@ -82,12 +82,12 @@ function ServiceCard({ service, index }: { service: ServiceItem, index: number }
           src={service.image}
           alt={service.alt}
           fill
-          className="object-cover transition-opacity duration-500 opacity-35 group-hover:opacity-45"
+          className="object-cover"
           style={{ objectPosition: service.objectPosition ?? "center" }}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-black/65 group-hover:bg-black/55 transition-colors duration-300" />
+        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300" />
       </div>
 
       {/* Border animation */}

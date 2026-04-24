@@ -2,6 +2,7 @@
 
 import { Phone } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import Image from "next/image"
 
 const communes = [
   { name: "Lens", primary: true },
@@ -28,7 +29,20 @@ export function Zone() {
   const { ref: mapRef, isVisible: mapVisible } = useScrollAnimation<HTMLDivElement>()
 
   return (
-    <section id="zone" className="relative bg-muted py-20 md:py-28 overflow-hidden">
+    <section id="zone" className="relative py-20 md:py-28 overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/breakdown-hood.png"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          loading="lazy"
+        />
+        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.80)' }} />
+      </div>
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
           {/* Left - Big Red Block */}

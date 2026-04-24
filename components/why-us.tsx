@@ -68,7 +68,7 @@ export function WhyUs() {
           sizes="100vw"
           loading="lazy"
         />
-        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.82)' }} />
+        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.75)' }} />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

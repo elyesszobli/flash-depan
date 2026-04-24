@@ -1,6 +1,7 @@
 "use client"
 
 import { Phone } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -8,14 +9,16 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="flex items-baseline gap-1">
-            <span className="font-serif text-xl font-bold text-white tracking-tight">
-              FLASH DÉPANN
-            </span>
-            <span className="font-serif text-xl font-bold text-primary">
-              62
-            </span>
-          </div>
+          <a href="#">
+            <Image
+              src="/images/logo.png"
+              alt="Flash Dépann 62 — Dépannage auto Lens"
+              width={160}
+              height={60}
+              className="h-10 object-contain"
+              style={{ width: "auto" }}
+            />
+          </a>
           
           {/* Phone */}
           <a

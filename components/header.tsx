@@ -2,6 +2,7 @@
 
 import { Phone, Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -31,17 +32,18 @@ export function Header() {
     >
       <div className="container mx-auto px-4 h-full flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-baseline gap-1">
-          <span className={`font-serif font-bold text-white tracking-tight transition-all duration-300 ${
-            isScrolled ? "text-lg md:text-xl" : "text-xl md:text-2xl"
-          }`}>
-            FLASH DÉPANN
-          </span>
-          <span className={`font-serif font-bold text-primary transition-all duration-300 ${
-            isScrolled ? "text-lg md:text-xl" : "text-xl md:text-2xl"
-          }`}>
-            62
-          </span>
+        <a href="#" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Flash Dépann 62 — Dépannage auto Lens"
+            width={200}
+            height={75}
+            className={`object-contain transition-all duration-300 ${
+              isScrolled ? "h-9" : "h-11"
+            }`}
+            style={{ width: "auto" }}
+            priority
+          />
         </a>
 
         {/* Desktop Nav */}

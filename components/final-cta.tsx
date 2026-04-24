@@ -24,10 +24,10 @@ export function FinalCTA() {
           loading="lazy"
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.65)' }} />
+        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.50)' }} />
         {/* Red tint */}
-        <div className="absolute inset-0" style={{ background: 'rgba(150,0,0,0.20)' }} />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/60" />
+        <div className="absolute inset-0" style={{ background: 'rgba(150,0,0,0.18)' }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-transparent" />
       </div>
 
       {/* Giant faded background text */}

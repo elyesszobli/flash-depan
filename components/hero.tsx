@@ -69,11 +69,11 @@ export function Hero() {
           sizes="100vw"
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.55)' }} />
+        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.40)' }} />
         {/* Red tint */}
-        <div className="absolute inset-0" style={{ background: 'rgba(180,0,0,0.15)' }} />
+        <div className="absolute inset-0" style={{ background: 'rgba(180,0,0,0.12)' }} />
         {/* Gradient to bottom */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
       </div>
 
       {/* Noise overlay */}
