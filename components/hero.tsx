@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, MessageCircle } from "lucide-react"
+import { Phone } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
 import { useCountUp } from "@/hooks/use-scroll-animation"
 import Image from "next/image"
@@ -170,13 +170,11 @@ export function Hero() {
                 <span>APPELER — 06 03 71 28 38</span>
               </a>
               <a
-                href="https://wa.me/33603712838"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:0603712838"
                 className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white hover:bg-white hover:text-background font-serif font-bold text-lg px-8 py-4 transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />
-                WHATSAPP
+                <Phone className="w-5 h-5" />
+                RAPPEL IMMÉDIAT
               </a>
             </div>
           </div>

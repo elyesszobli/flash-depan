@@ -1,6 +1,6 @@
 "use client"
 
-import { MessageCircle } from "lucide-react"
+import { Phone } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function FloatingWhatsApp() {
@@ -16,17 +16,15 @@ export function FloatingWhatsApp() {
 
   return (
     <a
-      href="https://wa.me/33603712838"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20BA5C] text-white rounded-full shadow-lg transition-all duration-300 ${
+      href="tel:0603712838"
+      className={`fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-primary hover:bg-secondary text-white rounded-full shadow-lg transition-all duration-300 ${
         bounce ? "-translate-y-2" : "translate-y-0"
       }`}
-      aria-label="Contacter sur WhatsApp"
+      aria-label="Appeler Flash Dépann 62"
     >
-      <MessageCircle className="w-7 h-7" />
-      <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full animate-ping" />
-      <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full" />
+      <Phone className="w-7 h-7" />
+      <span className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full animate-ping" />
+      <span className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full" />
     </a>
   )
 }
