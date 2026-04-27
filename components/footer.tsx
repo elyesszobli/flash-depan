@@ -29,10 +29,12 @@ export function Footer() {
             06 03 71 28 38
           </a>
           
-          {/* Zone */}
-          <span className="font-mono text-xs text-muted-foreground">
-            LENS · PAS-DE-CALAIS · 62
-          </span>
+          {/* Address — NAP pour Google Local SEO */}
+          <address className="not-italic font-mono text-xs text-muted-foreground text-center md:text-right leading-relaxed">
+            <span className="block">Lens, 62300</span>
+            <span className="block">Pas-de-Calais — Hauts-de-France</span>
+            <span className="block">Disponible 24h/24 · 7j/7</span>
+          </address>
         </div>
         
         {/* Copyright */}
